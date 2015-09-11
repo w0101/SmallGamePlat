@@ -9,4 +9,8 @@ html
         include ./header
         block content
         script(src='/jquery/dist/jquery.min.js')
+        script.
+            $(document).ready(function(){
+                $('##{pageIndex}').addClass('selected');
+            });
         block script
